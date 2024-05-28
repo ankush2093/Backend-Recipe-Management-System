@@ -96,7 +96,8 @@ app.use("/reviews",reviewsRouter);
 app.use("/getReviews",recipesRouter);
 
 mongoose
-  .connect("mongodb://localhost:27017/resturentmanagementsys")
+  // .connect("mongodb://localhost:27017/resturentmanagementsys")
+  .connect("mongodb+srv://recipe:recipe@cluster0.xar4xpc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     console.log("Connected to MongoDB");
   })
